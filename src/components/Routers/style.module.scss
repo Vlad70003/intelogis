@@ -1,0 +1,32 @@
+.router {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+  padding: 20px 40px;
+  background: white;
+  border-radius: 20px;
+
+  &__item {
+    padding: 10px;
+    border-top: 1px solid grey;
+    cursor: pointer;
+
+    &:hover {
+      background: greenyellow;
+    }
+    &_active {
+      background: green;
+      color: white;
+      font-weight: 700;
+
+      &:hover {
+        background: green;
+      }
+    }
+
+    &:last-child {
+      border-bottom: 1px solid grey;
+    }
+  }
+}
